@@ -11,16 +11,26 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             //Declaraçao de variaveis
-            string formatacaoDados = "Inicialização de Variável...\n"; 
+            string formatacaoDados = "\nInicialização de Variável...\n"; //contra barra n serve para concatenar a string
             string nomeUsuario, cidadeUsuario;
 
             
             // Entrada de Dados
-            Console.WriteLine("Informe seu nome: ");
+                //Nome
+            Console.WriteLine("\nInforme seu nome: ");
             nomeUsuario = Console.ReadLine();
 
+                //Cidade
+            Console.WriteLine("\nInforme sua cidade: ");
+            cidadeUsuario = Console.ReadLine();
+
             // Processamento
-            formatacaoDados += "Seja bem vindo, " + nomeUsuario + "!";
+            //Boas Vindas (nome)
+            formatacaoDados += "\nSeja vem vindo, " + nomeUsuario + "!\n\n";
+
+            //Cidade do usuário
+            formatacaoDados += $"\nLocalidade: {cidadeUsuario} \n";
+
 
             // Apresentaçao dos dados
             Console.WriteLine(formatacaoDados);
